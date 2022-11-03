@@ -1,18 +1,28 @@
 const express = require("express")
 const router = express.Router()
+const { validateRegistration } = require("../middleware/validator")
 
 const {
     register,
     login,
-    autoLogin,
-    logout
+    getUserInfo,
+    newPhoto,
+    loginSettings,
+    registerSettings, saveSettings, setDefault
 } = require("../controllers/mainController")
-const {validateRegister} = require("../modules/validator")
 
-router.post('/register', validateRegister, register)
+
+router.post('/register', validateRegistration, register)
 router.post('/login', login)
-router.get("/autologin", autoLogin)
-router.get("/logout", logout)
+router.get('/getUserInfo/:secret', getUserInfo)
+router.post('/newPhoto', newPhoto)
+router.post('/loginSettings', loginSettings)
+router.post('/registerSettings', registerSettings)
+router.post('/saveSettings', saveSettings)
+router.post('/setDefault', setDefault)
+
+
+
 
 
 module.exports = router

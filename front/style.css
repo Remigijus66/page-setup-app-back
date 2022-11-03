@@ -1,0 +1,86 @@
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grow1 {
+    flex: 1;
+}
+.grow2 {
+    flex: 2;
+}
+.grow3 {
+    flex: 3;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.p50 {
+    padding: 50px;
+}
+
+.table {
+    width: 700px;
+    height: 700px;
+    background-color: #ececec;
+}
+
+.box {
+    height: 70px;
+    width: 70px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.selected {
+    border: 3px solid mediumspringgreen;
+}
+
+.cancelDiv {
+    display: none;
+}
+
+.car {
+    margin: 10px;
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+.carUpdate {
+    width: 400px;
+}
+
+.err {
+    color: red;
+    padding: 10px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.profile {
+    display: none;
+}
